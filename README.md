@@ -5,7 +5,7 @@ At this time, it does only support authentication via [ORCID](https://orcid.org/
 \
 Once user is authenticated, his access_token to [sherlock-api](https://github.com/Amleth/sherlock-service) is stored in cookies. \
 \
-In case one of your apps is using SHERLOCK-SSO and is not sharing the same domain, you have to specify this new domain in ```AUTHENTICATED_WEBSITES```  (.env)\
+In case one of your apps is using SHERLOCK-SSO and is not sharing the same domain, you have to specify this new domain in `AUTHENTICATED_WEBSITES` (.env)\
 \
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
