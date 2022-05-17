@@ -19,3 +19,9 @@ Install all dependencies.
 
 Runs the app in the development mode.\
 Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
+
+## Code Style
+
+### `npx eslint "src/**" --fix`
+
+Execute this commands to ensure code is perfectly homogeneous.
