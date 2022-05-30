@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
 import { AuthenticationContext, AuthenticationStatus } from './AuthenticationContextProvider';
 
