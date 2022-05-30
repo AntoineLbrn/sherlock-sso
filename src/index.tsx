@@ -1,15 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { CookiesProvider } from 'react-cookie';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AuthenticationContextProvider } from './components/AuthenticationContextProvider';
+import AuthenticationHandler from './components/AuthenticationHandler';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <CookiesProvider>
+      <AuthenticationContextProvider>
+        <AuthenticationHandler>
+          <App />
+        </AuthenticationHandler>
+      </AuthenticationContextProvider>
+    </CookiesProvider>
   </React.StrictMode>,
 );
 
