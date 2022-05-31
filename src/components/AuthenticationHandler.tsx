@@ -13,7 +13,7 @@ function AuthenticationHandler({ children } : AuthenticationHandlerProps): JSX.E
   const redirectUri = query.get('redirect-uri');
 
   useEffect(() => {
-    if (window.location.pathname === '/redirect') {
+    if (query.get('redirect') === 'true') {
       if (cookies.REDIRECT_URI) {
         // When doing request from another domain, use Credentials : include (https://developer.mozilla.org/en-US/docs/Web/API/Request/credentials)
         window.location.replace(cookies.REDIRECT_URI);
